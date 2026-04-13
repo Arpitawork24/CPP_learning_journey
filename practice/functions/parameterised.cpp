@@ -6,9 +6,14 @@ void Printname(string name){
 }
 
 int main (){
-    string name;
-    cout<<"enter name: ";
-    cin >> name;
-    Printname(name);
+    string name1;
+    cout<<"enter name1: ";
+    cin >> name1;
+    Printname(name1);
+
+    string name2;
+    cout<<"enter name2";
+    cin >> name2;
+    Printname(name2);
     return 0;
 }
