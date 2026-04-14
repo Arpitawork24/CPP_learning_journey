@@ -13,6 +13,7 @@ int main (){
 
     int n;
     cin >> n;
+    // used function
     printn(n);
 
     return 0;
