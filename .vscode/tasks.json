@@ -2,33 +2,20 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "type": "cppbuild",
-      "label": "build C file",
-      "command": "C:/MinGW/bin/gcc.exe",
+      "label": "Run C++",
+      "type": "shell",
+      "command": "g++",
       "args": [
-        "-g",
         "${file}",
         "-o",
-        "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
-      ],
-      "group": "build",
-      "problemMatcher": ["$gcc"]
-    },
-    {
-      "type": "cppbuild",
-      "label": "build C++ file",
-      "command": "C:/MinGW/bin/g++.exe",
-      "args": [
-        "-g",
-        "${file}",
-        "-o",
-        "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
+        "run",
+        "&&",
+        "run"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
-      },
-      "problemMatcher": ["$gcc"]
+      }
     }
   ]
 }
